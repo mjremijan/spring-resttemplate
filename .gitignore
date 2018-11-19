@@ -1,0 +1,7 @@
+/thoth-resttemplate-02-proxy/target/
+/thoth-resttemplate-03-proxy_header_cookie_params/target/
+/thoth-resttemplate-04-prettyprint_jsonobject/target/
+/thoth-resttemplate-05-prettyprint_jackson/target/
+/thoth-resttemplate-06-jackson_bind/target/
+/thoth-resttemplate-00/target/
+/thoth-resttemplate-00/src/main/resources/application-mike.properties
