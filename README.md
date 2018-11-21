@@ -35,6 +35,8 @@ This project researches how to set HTTP header values, a cookie, and
 request parameters for `RestTemplate`. I used a personal account I have on an
 external website to do this test because it allows me to easily verify
 header, cookie, and request parameters are working. Consequently, most of
-the configuration needed for this test is kept private.
+the configuration needed for this test is kept private.  The private
+file is thoth-resttemplate-00 `application-mike.properties`, which is not 
+committed to source control.
 
 
