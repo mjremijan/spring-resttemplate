@@ -52,7 +52,8 @@ public class RestTemplateForSite {
                 .fromHttpUrl(url)
                 .queryParam(paramName, String.format(paramValueFormat, book, chapter, 0, 999))
             ;
-
+        
+        
         HttpEntity<String> response = restTemplate.exchange(
             builder.toUriString(),
             HttpMethod.GET,
