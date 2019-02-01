@@ -8,9 +8,19 @@ This contains an `application-mike.properties` file which
 is ignored by Git and not committed to GitHub since it
 contains properties to remain private.
 
+```txt
+my.proxy.host=
+my.proxy.port=
+my.site.rest.url=url_that_ends_in_php
+my.site.rest.cookie.name=cookie_name_that_ends_in_php
+my.site.rest.cookie.value=cookie_value_is_long_string
+my.site.rest.param.name=param_name_refs
+my.site.rest.param.valueFormat=param_value_big_array
+```
+
 ## thoth-resttemplate-01-it_works
 
-Using `RestTemplate` to call a test REST endpoint that is publically available
+Using `RestTemplate` to call a test REST endpoint that is publicly available
 on the Internet. 
 
 **NOTE** If the connection requires a proxy, manually configure the proxy
@@ -38,5 +48,9 @@ header, cookie, and request parameters are working. Consequently, most of
 the configuration needed for this test is kept private.  The private
 file is thoth-resttemplate-00 `application-mike.properties`, which is not 
 committed to source control.
+
+The `application-mike.properties` is activated when Spring Boot is run with 
+the 'mike' profile. Right-click the `thoth-resttemplate-03-header_cookie_param`
+project in NetBeans, select "Run Maven", select "Spring boot run (mike)"
 
 
