@@ -4,16 +4,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.ComponentScan;
 import org.thoth.resttemplate.chapter.ChapterRepository;
-import org.thoth.resttemplate.web.client.RestTemplateConfiguration;
 
 /**
  *
  * @author Michael Remijan mjremijan@yahoo.com @mjremijan
  */
 @SpringBootApplication
-@Import({RestTemplateConfiguration.class})
+@ComponentScan(basePackages = "org.thoth")
+//@Import({RestTemplateConfiguration.class})
 public class Main implements CommandLineRunner {
 
     public static void main(String[] args) {
