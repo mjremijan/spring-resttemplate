@@ -67,9 +67,9 @@
         </profile>
     </profiles>
     <modules>
-        <module>thoth-resttemplate-00</module>
-        <module>thoth-resttemplate-01-it_works</module>
-        <module>thoth-resttemplate-02-proxy</module>
-        <module>thoth-resttemplate-03-header_cookie_param</module>
+        <module>spring-resttemplate-00</module>
+        <module>spring-resttemplate-01-it_works</module>
+        <module>spring-resttemplate-02-proxy</module>
+        <module>spring-resttemplate-03-header_cookie_param</module>
     </modules>
 </project>
