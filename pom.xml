@@ -9,8 +9,8 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     
-    <groupId>org.thoth</groupId>
-    <artifactId>thoth-resttemplate</artifactId>
+    <groupId>org.spring</groupId>
+    <artifactId>spring-resttemplate</artifactId>
     <version>1.0.0.0-SNAPSHOT</version>
     
     <packaging>pom</packaging>
