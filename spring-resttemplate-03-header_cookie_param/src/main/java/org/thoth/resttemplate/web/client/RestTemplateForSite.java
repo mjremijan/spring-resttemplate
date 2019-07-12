@@ -44,6 +44,8 @@ public class RestTemplateForSite {
         //System.out.printf("Cookie value=\"%s\"%n", cookieValue);
         httpHeaders.add("Cookie", String.format("%s=%s",cookieName, cookieValue));
         httpEntity = new HttpEntity<>(httpHeaders);
+        
+        System.out.printf("URL: %s%n", url);
     }
     
     public String exchange(int book, int chapter) {
