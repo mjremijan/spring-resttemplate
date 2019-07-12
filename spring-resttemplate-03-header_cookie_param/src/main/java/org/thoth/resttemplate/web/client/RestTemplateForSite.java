@@ -41,19 +41,21 @@ public class RestTemplateForSite {
     protected void postConstruct() {
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.set("User-Agent", String.format("Java/%s", System.getProperty("java.version")));
+        //System.out.printf("Cookie value=\"%s\"%n", cookieValue);
         httpHeaders.add("Cookie", String.format("%s=%s",cookieName, cookieValue));
         httpEntity = new HttpEntity<>(httpHeaders);
     }
     
     public String exchange(int book, int chapter) {
-
-        UriComponentsBuilder builder 
+        
+        String paramValue = String.format(paramValueFormat, book, chapter, 0, 999);
+        //System.out.printf("Param value=\"%s\"%n", paramValue);
+        UriComponentsBuilder builder
             = UriComponentsBuilder
                 .fromHttpUrl(url)
-                .queryParam(paramName, String.format(paramValueFormat, book, chapter, 0, 999))
+                .queryParam(paramName, paramValue);
             ;
-        
-        
+         
         HttpEntity<String> response = restTemplate.exchange(
             builder.toUriString(),
             HttpMethod.GET,
